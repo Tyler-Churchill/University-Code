@@ -1,0 +1,98 @@
+\hypertarget{classBox}{
+\section{Box Class Reference}
+\label{classBox}\index{Box@{Box}}
+}
+
+
+{\ttfamily \#include $<$Box.h$>$}Inheritance diagram for Box::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classBox}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBox_a77fa7ad8be8934cbe9c3bcc86ca33998}{Box} (int ul\_\-row=0, int ul\_\-column=0, int br\_\-row=0, int br\_\-column=0, char ch= ' ')
+\item 
+virtual void \hyperlink{classBox_a5c6c1c650b13f2978e3b559bb5af15d2}{draw} (\hyperlink{classScreen}{Screen} \&screen)
+\begin{DoxyCompactList}\small\item\em draws the \hyperlink{classBox}{Box} on the given \hyperlink{classScreen}{Screen} \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classBox_ac0ea633a10bf980901766b7aaefdb912}{read} (istream \&is)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classBox_a5411fa40529560030450d1eee001623d}{constructLines} (int ul\_\-row, int ul\_\-column, int br\_\-row, int br\_\-column, char ch)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classBox_a1b0489e286b8bf52c2f38c7042a5e617}{
+\hyperlink{classLine}{Line} \hyperlink{classBox_a1b0489e286b8bf52c2f38c7042a5e617}{m\_\-line} \mbox{[}4\mbox{]}}
+\label{classBox_a1b0489e286b8bf52c2f38c7042a5e617}
+
+\begin{DoxyCompactList}\small\item\em the four Lines that make up a box \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classBox}{Box} class is an abstraction of a retangular box that can be drawn on a \hyperlink{classScreen}{Screen}. It is specified internally by two corners-\/-\/-\/upper left and bottom right, as well as a character to draw the box with. It provides functions to draw itself on a \hyperlink{classScreen}{Screen} as well as reading a description of itself from an input stream. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBox_a77fa7ad8be8934cbe9c3bcc86ca33998}{
+\index{Box@{Box}!Box@{Box}}
+\index{Box@{Box}!Box@{Box}}
+\subsubsection[{Box}]{\setlength{\rightskip}{0pt plus 5cm}Box::Box (int {\em ul\_\-row} = {\ttfamily 0}, \/  int {\em ul\_\-column} = {\ttfamily 0}, \/  int {\em br\_\-row} = {\ttfamily 0}, \/  int {\em br\_\-column} = {\ttfamily 0}, \/  char {\em ch} = {\ttfamily '~'})}}
+\label{classBox_a77fa7ad8be8934cbe9c3bcc86ca33998}
+constructs a box
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em ul\_\-row}]the row of the upper left corner \item[\mbox{$\leftarrow$} {\em ul\_\-column}]the column of the upper left corner \item[\mbox{$\leftarrow$} {\em br\_\-row}]the row of the bottom right corner \item[\mbox{$\leftarrow$} {\em br\_\-column}]the column of the bottom right corner \item[\mbox{$\leftarrow$} {\em ch}]the drawing character \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBox_a5411fa40529560030450d1eee001623d}{
+\index{Box@{Box}!constructLines@{constructLines}}
+\index{constructLines@{constructLines}!Box@{Box}}
+\subsubsection[{constructLines}]{\setlength{\rightskip}{0pt plus 5cm}void Box::constructLines (int {\em ul\_\-row}, \/  int {\em ul\_\-column}, \/  int {\em br\_\-row}, \/  int {\em br\_\-column}, \/  char {\em ch})\hspace{0.3cm}{\ttfamily  \mbox{[}protected\mbox{]}}}}
+\label{classBox_a5411fa40529560030450d1eee001623d}
+helper to construct the box with the four corners and the drawing character.
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em ul\_\-row}]the row of the upper left corner \item[\mbox{$\leftarrow$} {\em ul\_\-column}]the column of the upper left corner \item[\mbox{$\leftarrow$} {\em br\_\-row}]the row of the bottom right corner \item[\mbox{$\leftarrow$} {\em br\_\-column}]the column of the bottom right corner \item[\mbox{$\leftarrow$} {\em ch}]the drawing character \end{DoxyParams}
+\hypertarget{classBox_a5c6c1c650b13f2978e3b559bb5af15d2}{
+\index{Box@{Box}!draw@{draw}}
+\index{draw@{draw}!Box@{Box}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}void Box::draw ({\bf Screen} \& {\em screen})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBox_a5c6c1c650b13f2978e3b559bb5af15d2}
+
+
+draws the \hyperlink{classBox}{Box} on the given \hyperlink{classScreen}{Screen} 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftrightarrow$} {\em screen}]the screen to draw in \end{DoxyParams}
+
+
+Implements \hyperlink{classScreenElement_a1bf719edc836cc6ceaa84014c7342028}{ScreenElement}.
+
+Reimplemented in \hyperlink{classTextBox_ae28a00e6cd50d5432c02b579b0fb32ed}{TextBox}.\hypertarget{classBox_ac0ea633a10bf980901766b7aaefdb912}{
+\index{Box@{Box}!read@{read}}
+\index{read@{read}!Box@{Box}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}void Box::read (istream \& {\em is})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classBox_ac0ea633a10bf980901766b7aaefdb912}
+reads a description of the box from input stream. The row and columns of the two corners, as well as the drawing character are specified on one line of input separated by spaces. 
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classinput__format__error}{input\_\-format\_\-error}}]\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftrightarrow$} {\em is}]the input stream to read from \end{DoxyParams}
+
+
+Implements \hyperlink{classScreenElement_ae5c8356d0faace202bb3ee620433677e}{ScreenElement}.
+
+Reimplemented in \hyperlink{classTextBox_a3265df3298f92813667d1c70479f7f5c}{TextBox}.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Box.h\item 
+Box.cc\end{DoxyCompactItemize}

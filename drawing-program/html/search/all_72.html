@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><title></title>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<link rel="stylesheet" type="text/css" href="search.css"/>
+<script type="text/javascript" src="search.js"></script>
+</head>
+<body class="SRPage">
+<div id="SRIndex">
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRResult" id="SR_read">
+ <div class="SREntry">
+  <a id="Item0" onkeydown="return searchResults.Nav(event,0)" onkeypress="return searchResults.Nav(event,0)" onkeyup="return searchResults.Nav(event,0)" class="SRSymbol" href="javascript:searchResults.Toggle('SR_read')">read</a>
+  <div class="SRChildren">
+    <a id="Item0_c0" onkeydown="return searchResults.NavChild(event,0,0)" onkeypress="return searchResults.NavChild(event,0,0)" onkeyup="return searchResults.NavChild(event,0,0)" class="SRScope" href="../classBox.html#ac0ea633a10bf980901766b7aaefdb912" target="_parent">Box::read()</a>
+    <a id="Item0_c1" onkeydown="return searchResults.NavChild(event,0,1)" onkeypress="return searchResults.NavChild(event,0,1)" onkeyup="return searchResults.NavChild(event,0,1)" class="SRScope" href="../classLine.html#a8ca52eabbd2ede5f52cf6c220a4c2f2c" target="_parent">Line::read()</a>
+    <a id="Item0_c2" onkeydown="return searchResults.NavChild(event,0,2)" onkeypress="return searchResults.NavChild(event,0,2)" onkeyup="return searchResults.NavChild(event,0,2)" class="SRScope" href="../classScreenElement.html#ae5c8356d0faace202bb3ee620433677e" target="_parent">ScreenElement::read()</a>
+    <a id="Item0_c3" onkeydown="return searchResults.NavChild(event,0,3)" onkeypress="return searchResults.NavChild(event,0,3)" onkeyup="return searchResults.NavChild(event,0,3)" class="SRScope" href="../classText.html#af326f364609eb7e286ad778accb29db3" target="_parent">Text::read()</a>
+    <a id="Item0_c4" onkeydown="return searchResults.NavChild(event,0,4)" onkeypress="return searchResults.NavChild(event,0,4)" onkeyup="return searchResults.NavChild(event,0,4)" class="SRScope" href="../classTextBox.html#a3265df3298f92813667d1c70479f7f5c" target="_parent">TextBox::read()</a>
+  </div>
+ </div>
+</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+<script type="text/javascript"><!--
+document.getElementById("Loading").style.display="none";
+document.getElementById("NoMatches").style.display="none";
+var searchResults = new SearchResults("searchResults");
+searchResults.Search();
+--></script>
+</div>
+</body>
+</html>

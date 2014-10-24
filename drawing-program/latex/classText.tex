@@ -1,0 +1,93 @@
+\hypertarget{classText}{
+\section{Text Class Reference}
+\label{classText}\index{Text@{Text}}
+}
+
+
+{\ttfamily \#include $<$Text.h$>$}Inheritance diagram for Text::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classText}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classText_a1c798d677585c623ce9cd6b9d874cafe}{Text} (int row=0, int column=0, const string \&str=\char`\"{}\char`\"{})
+\item 
+virtual void \hyperlink{classText_a5fedb2f5b4c40b9cd8965d58716b73f8}{draw} (\hyperlink{classScreen}{Screen} \&screen)
+\begin{DoxyCompactList}\small\item\em draws the \hyperlink{classText}{Text} on the given \hyperlink{classScreen}{Screen} \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classText_af326f364609eb7e286ad778accb29db3}{read} (istream \&is)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classText_a32b3be97b9aabe0a490787c7120b371d}{
+int \hyperlink{classText_a32b3be97b9aabe0a490787c7120b371d}{m\_\-row}}
+\label{classText_a32b3be97b9aabe0a490787c7120b371d}
+
+\begin{DoxyCompactList}\small\item\em The row of the first character. \item\end{DoxyCompactList}\item 
+\hypertarget{classText_a09523ee86a807344c5e41db7ccc6ddf2}{
+int \hyperlink{classText_a09523ee86a807344c5e41db7ccc6ddf2}{m\_\-col}}
+\label{classText_a09523ee86a807344c5e41db7ccc6ddf2}
+
+\begin{DoxyCompactList}\small\item\em The column of the first character. \item\end{DoxyCompactList}\item 
+\hypertarget{classText_aead900be403332c4d7c9388e6a1be316}{
+string \hyperlink{classText_aead900be403332c4d7c9388e6a1be316}{m\_\-text}}
+\label{classText_aead900be403332c4d7c9388e6a1be316}
+
+\begin{DoxyCompactList}\small\item\em The text string. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classText}{Text} class is an abstraction of a text string that can be drawn on a \hyperlink{classScreen}{Screen}. It is specified internally by the location of the first character and the string itself. It provides functions to draw itself on a \hyperlink{classScreen}{Screen} as well as reading a description of itself from an input stream. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classText_a1c798d677585c623ce9cd6b9d874cafe}{
+\index{Text@{Text}!Text@{Text}}
+\index{Text@{Text}!Text@{Text}}
+\subsubsection[{Text}]{\setlength{\rightskip}{0pt plus 5cm}Text::Text (int {\em row} = {\ttfamily 0}, \/  int {\em column} = {\ttfamily 0}, \/  const string \& {\em str} = {\ttfamily \char`\"{}\char`\"{}})}}
+\label{classText_a1c798d677585c623ce9cd6b9d874cafe}
+constructs a text object
+
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em row}]the row of the first character \item[\mbox{$\leftarrow$} {\em column}]the column of the first character \item[\mbox{$\leftarrow$} {\em str}]the string \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classText_a5fedb2f5b4c40b9cd8965d58716b73f8}{
+\index{Text@{Text}!draw@{draw}}
+\index{draw@{draw}!Text@{Text}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Text::draw ({\bf Screen} \& {\em screen})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classText_a5fedb2f5b4c40b9cd8965d58716b73f8}
+
+
+draws the \hyperlink{classText}{Text} on the given \hyperlink{classScreen}{Screen} 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftrightarrow$} {\em screen}]the screen to draw in \end{DoxyParams}
+
+
+Implements \hyperlink{classScreenElement_a1bf719edc836cc6ceaa84014c7342028}{ScreenElement}.
+
+Reimplemented in \hyperlink{classTextBox_ae28a00e6cd50d5432c02b579b0fb32ed}{TextBox}.\hypertarget{classText_af326f364609eb7e286ad778accb29db3}{
+\index{Text@{Text}!read@{read}}
+\index{read@{read}!Text@{Text}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Text::read (istream \& {\em is})\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classText_af326f364609eb7e286ad778accb29db3}
+reads a description of the \hyperlink{classText}{Text} from input stream. The row and column of the first character, as well as the text string are specified on one line of input separated by spaces. 
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classinput__format__error}{input\_\-format\_\-error}}]\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftrightarrow$} {\em is}]the input stream to read from \end{DoxyParams}
+
+
+Implements \hyperlink{classScreenElement_ae5c8356d0faace202bb3ee620433677e}{ScreenElement}.
+
+Reimplemented in \hyperlink{classTextBox_a3265df3298f92813667d1c70479f7f5c}{TextBox}.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Text.h\item 
+Text.cc\end{DoxyCompactItemize}

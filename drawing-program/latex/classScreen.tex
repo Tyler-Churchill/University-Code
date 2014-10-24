@@ -1,0 +1,99 @@
+\hypertarget{classScreen}{
+\section{Screen Class Reference}
+\label{classScreen}\index{Screen@{Screen}}
+}
+
+
+{\ttfamily \#include $<$Screen.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classScreen_a44fc6e533a84e710467128a95f20462c}{Screen} (int height=24, int width=80)
+\begin{DoxyCompactList}\small\item\em constructs a \hyperlink{classScreen}{Screen} object from the given dimensions \item\end{DoxyCompactList}\item 
+int \hyperlink{classScreen_a2d1cf1b84a49135a33aac9d7dc41af3a}{getRows} () const 
+\begin{DoxyCompactList}\small\item\em returns the number of rows in the array \item\end{DoxyCompactList}\item 
+int \hyperlink{classScreen_ad910656f46d9b22295fb030b5e2aec3d}{getColumns} () const 
+\begin{DoxyCompactList}\small\item\em returns the number of columns in the array \item\end{DoxyCompactList}\item 
+\hypertarget{classScreen_a35e74266b2a04e37b354ceff7a5f1031}{
+void \hyperlink{classScreen_a35e74266b2a04e37b354ceff7a5f1031}{clear} ()}
+\label{classScreen_a35e74266b2a04e37b354ceff7a5f1031}
+
+\begin{DoxyCompactList}\small\item\em resets the entire array to spaces \item\end{DoxyCompactList}\item 
+void \hyperlink{classScreen_ae19cdc0fab2d48c6bc947a78bb77b50a}{set} (int row, int col, char ch)
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+ostream \& \hyperlink{classScreen_aa0d87c1b28233bc47310fb992a0a648e}{operator$<$$<$} (ostream \&os, const \hyperlink{classScreen}{Screen} \&screen)
+\begin{DoxyCompactList}\small\item\em output the given \hyperlink{classScreen}{Screen} object to the output stream \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classScreen}{Screen} class is an abstraction of a 2D character array. The coordinates of each location is specified by the row and column. Rows are numbered from 0 from the top, and columns are numbered from 0 from the left. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classScreen_a44fc6e533a84e710467128a95f20462c}{
+\index{Screen@{Screen}!Screen@{Screen}}
+\index{Screen@{Screen}!Screen@{Screen}}
+\subsubsection[{Screen}]{\setlength{\rightskip}{0pt plus 5cm}Screen::Screen (int {\em height} = {\ttfamily 24}, \/  int {\em width} = {\ttfamily 80})}}
+\label{classScreen_a44fc6e533a84e710467128a95f20462c}
+
+
+constructs a \hyperlink{classScreen}{Screen} object from the given dimensions 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em height}]the height of the array, default to 24 \item[\mbox{$\leftarrow$} {\em width}]the width of the array, default to 80 \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classScreen_ad910656f46d9b22295fb030b5e2aec3d}{
+\index{Screen@{Screen}!getColumns@{getColumns}}
+\index{getColumns@{getColumns}!Screen@{Screen}}
+\subsubsection[{getColumns}]{\setlength{\rightskip}{0pt plus 5cm}int Screen::getColumns () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classScreen_ad910656f46d9b22295fb030b5e2aec3d}
+
+
+returns the number of columns in the array \begin{DoxyReturn}{Returns}
+the number of columns in the array 
+\end{DoxyReturn}
+\hypertarget{classScreen_a2d1cf1b84a49135a33aac9d7dc41af3a}{
+\index{Screen@{Screen}!getRows@{getRows}}
+\index{getRows@{getRows}!Screen@{Screen}}
+\subsubsection[{getRows}]{\setlength{\rightskip}{0pt plus 5cm}int Screen::getRows () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classScreen_a2d1cf1b84a49135a33aac9d7dc41af3a}
+
+
+returns the number of rows in the array \begin{DoxyReturn}{Returns}
+the number of rows in the array 
+\end{DoxyReturn}
+\hypertarget{classScreen_ae19cdc0fab2d48c6bc947a78bb77b50a}{
+\index{Screen@{Screen}!set@{set}}
+\index{set@{set}!Screen@{Screen}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void Screen::set (int {\em row}, \/  int {\em col}, \/  char {\em ch})}}
+\label{classScreen_ae19cdc0fab2d48c6bc947a78bb77b50a}
+sets the character at the given location to the given character. The request is ignored if the location is invalid. 
+\begin{DoxyExceptions}{Exceptions}
+\item[{\em \hyperlink{classinvalid__coordinates__error}{invalid\_\-coordinates\_\-error}}]\end{DoxyExceptions}
+
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em row}]row of the location \item[\mbox{$\leftarrow$} {\em col}]column of the location \item[\mbox{$\leftarrow$} {\em ch}]the character to put into the location \end{DoxyParams}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{classScreen_aa0d87c1b28233bc47310fb992a0a648e}{
+\index{Screen@{Screen}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Screen@{Screen}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}ostream\& operator$<$$<$ (ostream \& {\em os}, \/  const {\bf Screen} \& {\em screen})\hspace{0.3cm}{\ttfamily  \mbox{[}friend\mbox{]}}}}
+\label{classScreen_aa0d87c1b28233bc47310fb992a0a648e}
+
+
+output the given \hyperlink{classScreen}{Screen} object to the output stream 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em os}]output stream \item[\mbox{$\leftarrow$} {\em screen}]the \hyperlink{classScreen}{Screen} object \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the output stream 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Screen.h\item 
+Screen.cc\end{DoxyCompactItemize}

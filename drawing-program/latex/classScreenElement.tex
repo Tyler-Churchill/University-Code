@@ -1,0 +1,59 @@
+\hypertarget{classScreenElement}{
+\section{ScreenElement Class Reference}
+\label{classScreenElement}\index{ScreenElement@{ScreenElement}}
+}
+
+
+{\ttfamily \#include $<$ScreenElement.h$>$}Inheritance diagram for ScreenElement::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3cm]{classScreenElement}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classScreenElement_ae88aa724a30f2aa3b24576a0b8b1ed43}{
+virtual \hyperlink{classScreenElement_ae88aa724a30f2aa3b24576a0b8b1ed43}{$\sim$ScreenElement} ()}
+\label{classScreenElement_ae88aa724a30f2aa3b24576a0b8b1ed43}
+
+\begin{DoxyCompactList}\small\item\em destroys the object \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classScreenElement_a1bf719edc836cc6ceaa84014c7342028}{draw} (\hyperlink{classScreen}{Screen} \&screen)=0
+\begin{DoxyCompactList}\small\item\em draws the element on the given \hyperlink{classScreen}{Screen} \item\end{DoxyCompactList}\item 
+virtual void \hyperlink{classScreenElement_ae5c8356d0faace202bb3ee620433677e}{read} (istream \&is)=0
+\begin{DoxyCompactList}\small\item\em reads a description of the element from input stream \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classScreenElement}{ScreenElement} class is an abstraction of any element that can appear on a \hyperlink{classScreen}{Screen}. It provides functions to draw itself on a \hyperlink{classScreen}{Screen} as well as reading a description of itself from an input stream. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classScreenElement_a1bf719edc836cc6ceaa84014c7342028}{
+\index{ScreenElement@{ScreenElement}!draw@{draw}}
+\index{draw@{draw}!ScreenElement@{ScreenElement}}
+\subsubsection[{draw}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ScreenElement::draw ({\bf Screen} \& {\em screen})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classScreenElement_a1bf719edc836cc6ceaa84014c7342028}
+
+
+draws the element on the given \hyperlink{classScreen}{Screen} 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftrightarrow$} {\em screen}]the screen to draw in \end{DoxyParams}
+
+
+Implemented in \hyperlink{classBox_a5c6c1c650b13f2978e3b559bb5af15d2}{Box}, \hyperlink{classLine_a0f119b83f7c23a1bf27b6d34f93b63f2}{Line}, \hyperlink{classText_a5fedb2f5b4c40b9cd8965d58716b73f8}{Text}, and \hyperlink{classTextBox_ae28a00e6cd50d5432c02b579b0fb32ed}{TextBox}.\hypertarget{classScreenElement_ae5c8356d0faace202bb3ee620433677e}{
+\index{ScreenElement@{ScreenElement}!read@{read}}
+\index{read@{read}!ScreenElement@{ScreenElement}}
+\subsubsection[{read}]{\setlength{\rightskip}{0pt plus 5cm}virtual void ScreenElement::read (istream \& {\em is})\hspace{0.3cm}{\ttfamily  \mbox{[}pure virtual\mbox{]}}}}
+\label{classScreenElement_ae5c8356d0faace202bb3ee620433677e}
+
+
+reads a description of the element from input stream 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftrightarrow$} {\em is}]the input stream to read from \end{DoxyParams}
+
+
+Implemented in \hyperlink{classBox_ac0ea633a10bf980901766b7aaefdb912}{Box}, \hyperlink{classLine_a8ca52eabbd2ede5f52cf6c220a4c2f2c}{Line}, \hyperlink{classText_af326f364609eb7e286ad778accb29db3}{Text}, and \hyperlink{classTextBox_a3265df3298f92813667d1c70479f7f5c}{TextBox}.
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+ScreenElement.h\end{DoxyCompactItemize}
