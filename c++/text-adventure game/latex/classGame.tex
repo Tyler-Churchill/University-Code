@@ -1,0 +1,169 @@
+\hypertarget{classGame}{
+\section{Game Class Reference}
+\label{classGame}\index{Game@{Game}}
+}
+
+
+{\ttfamily \#include $<$Game.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classGame_ae3d112ca6e0e55150d2fdbc704474530}{
+\hyperlink{classGame_ae3d112ca6e0e55150d2fdbc704474530}{$\sim$Game} ()}
+\label{classGame_ae3d112ca6e0e55150d2fdbc704474530}
+
+\begin{DoxyCompactList}\small\item\em game destructor \item\end{DoxyCompactList}\item 
+\hypertarget{classGame_a3d9b98f7c4a96ecf578f75b96c9f0e90}{
+void \hyperlink{classGame_a3d9b98f7c4a96ecf578f75b96c9f0e90}{start} ()}
+\label{classGame_a3d9b98f7c4a96ecf578f75b96c9f0e90}
+
+\begin{DoxyCompactList}\small\item\em Initializes and starts a new game. \item\end{DoxyCompactList}\item 
+\hypertarget{classGame_afee58e8faabb40341b8a2dfb37357e12}{
+void \hyperlink{classGame_afee58e8faabb40341b8a2dfb37357e12}{createCharacter} ()}
+\label{classGame_afee58e8faabb40341b8a2dfb37357e12}
+
+\begin{DoxyCompactList}\small\item\em Asks user details to create their character. \item\end{DoxyCompactList}\item 
+\hypertarget{classGame_a77584a176affdd5548f781d0461fd24c}{
+bool \hyperlink{classGame_a77584a176affdd5548f781d0461fd24c}{generateMap} ()}
+\label{classGame_a77584a176affdd5548f781d0461fd24c}
+
+\begin{DoxyCompactList}\small\item\em Generates the game map and sets the generated map to the current game map. \item\end{DoxyCompactList}\item 
+\hypertarget{classGame_ae89e277761b7dc5bc7a23fd1b4c6f17d}{
+void \hyperlink{classGame_ae89e277761b7dc5bc7a23fd1b4c6f17d}{mainLoop} ()}
+\label{classGame_ae89e277761b7dc5bc7a23fd1b4c6f17d}
+
+\begin{DoxyCompactList}\small\item\em Main loop of the game, responsible for updating game logic/game world. \item\end{DoxyCompactList}\item 
+\hypertarget{classGame_a5df081378ffd4d3578bbcf30841129ec}{
+void \hyperlink{classGame_a5df081378ffd4d3578bbcf30841129ec}{roomOption} ()}
+\label{classGame_a5df081378ffd4d3578bbcf30841129ec}
+
+\begin{DoxyCompactList}\small\item\em checks the rooms options \item\end{DoxyCompactList}\item 
+\hypertarget{classGame_a4701824c958fd11467a87ba6a9c1b3d6}{
+void \hyperlink{classGame_a4701824c958fd11467a87ba6a9c1b3d6}{combat} (\hyperlink{classRoom}{Room} $\ast$room)}
+\label{classGame_a4701824c958fd11467a87ba6a9c1b3d6}
+
+\begin{DoxyCompactList}\small\item\em checks the combat choices of the room \item\end{DoxyCompactList}\item 
+\hypertarget{classGame_a1beb150e5072032138e86b11b874f6ad}{
+void \hyperlink{classGame_a1beb150e5072032138e86b11b874f6ad}{inventory} ()}
+\label{classGame_a1beb150e5072032138e86b11b874f6ad}
+
+\begin{DoxyCompactList}\small\item\em checks the inventory of the player \item\end{DoxyCompactList}\item 
+\hypertarget{classGame_a0442d3750942b794836ed953f55e3ad8}{
+void \hyperlink{classGame_a0442d3750942b794836ed953f55e3ad8}{displayOptions} ()}
+\label{classGame_a0442d3750942b794836ed953f55e3ad8}
+
+\begin{DoxyCompactList}\small\item\em Displays the avaliable options that the user has in each room based on player state. \item\end{DoxyCompactList}\item 
+void \hyperlink{classGame_a51c860f2a6051188585946859efa2967}{openInventory} (\hyperlink{classEntityPlayer}{EntityPlayer} \&player)
+\begin{DoxyCompactList}\small\item\em Displays the users inventory to the screen. \item\end{DoxyCompactList}\item 
+int \hyperlink{classGame_a91643d2e9ede2dfa552339db06ff52bf}{getOption} ()
+\begin{DoxyCompactList}\small\item\em Asks the user for a integer input. \item\end{DoxyCompactList}\item 
+void \hyperlink{classGame_ad94d7beb2a5072ee2d8379cce4962ced}{print} (std::string text)
+\begin{DoxyCompactList}\small\item\em Outputs the given text to the screen. \item\end{DoxyCompactList}\item 
+int \hyperlink{classGame_aa52fc612f751e30daeacc15661472628}{getDifficulty} () const 
+\begin{DoxyCompactList}\small\item\em Returns the difficulty of the game. \item\end{DoxyCompactList}\item 
+void \hyperlink{classGame_acf32945c92475ff25c296b38b9090d7a}{setDifficulty} (int difficulty)
+\begin{DoxyCompactList}\small\item\em sets the difficulty of the game \item\end{DoxyCompactList}\item 
+void \hyperlink{classGame_a090e1f20d57b782a93b5b61c8b6f15b8}{log} (std::string message)
+\begin{DoxyCompactList}\small\item\em logs a debug message to the console \item\end{DoxyCompactList}\item 
+void \hyperlink{classGame_afd7159db54f6bf097c54fdb21f9ffdab}{setDebug} (bool d)
+\begin{DoxyCompactList}\small\item\em sets debug messages on or off \item\end{DoxyCompactList}\item 
+bool \hyperlink{classGame_a12908d0175f34c5fabe2283c2258532d}{getDebug} () const 
+\begin{DoxyCompactList}\small\item\em gets the current debug state on or off \item\end{DoxyCompactList}\item 
+\hypertarget{classGame_a9726dd4085951bdeae5666ccde07e6e9}{
+void \hyperlink{classGame_a9726dd4085951bdeae5666ccde07e6e9}{exit} ()}
+\label{classGame_a9726dd4085951bdeae5666ccde07e6e9}
+
+\begin{DoxyCompactList}\small\item\em Exits the game safely. \item\end{DoxyCompactList}\item 
+\hypertarget{classGame_a8ba8d7bcda356ed584dc445184320ff7}{
+void \hyperlink{classGame_a8ba8d7bcda356ed584dc445184320ff7}{clear} ()}
+\label{classGame_a8ba8d7bcda356ed584dc445184320ff7}
+
+\begin{DoxyCompactList}\small\item\em Clears the console screen. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+/brief \hyperlink{classGame}{Game} class 
+
+\subsection{Member Function Documentation}
+\hypertarget{classGame_a12908d0175f34c5fabe2283c2258532d}{
+\index{Game@{Game}!getDebug@{getDebug}}
+\index{getDebug@{getDebug}!Game@{Game}}
+\subsubsection[{getDebug}]{\setlength{\rightskip}{0pt plus 5cm}bool Game::getDebug () const}}
+\label{classGame_a12908d0175f34c5fabe2283c2258532d}
+
+
+gets the current debug state on or off \begin{DoxyReturn}{Returns}
+bool, true if on false if off 
+\end{DoxyReturn}
+\hypertarget{classGame_aa52fc612f751e30daeacc15661472628}{
+\index{Game@{Game}!getDifficulty@{getDifficulty}}
+\index{getDifficulty@{getDifficulty}!Game@{Game}}
+\subsubsection[{getDifficulty}]{\setlength{\rightskip}{0pt plus 5cm}int Game::getDifficulty () const}}
+\label{classGame_aa52fc612f751e30daeacc15661472628}
+
+
+Returns the difficulty of the game. \begin{DoxyReturn}{Returns}
+Returns the difficulty of the game 
+\end{DoxyReturn}
+\hypertarget{classGame_a91643d2e9ede2dfa552339db06ff52bf}{
+\index{Game@{Game}!getOption@{getOption}}
+\index{getOption@{getOption}!Game@{Game}}
+\subsubsection[{getOption}]{\setlength{\rightskip}{0pt plus 5cm}int Game::getOption ()}}
+\label{classGame_a91643d2e9ede2dfa552339db06ff52bf}
+
+
+Asks the user for a integer input. \begin{DoxyReturn}{Returns}
+Returns the option the user picked 
+\end{DoxyReturn}
+\hypertarget{classGame_a090e1f20d57b782a93b5b61c8b6f15b8}{
+\index{Game@{Game}!log@{log}}
+\index{log@{log}!Game@{Game}}
+\subsubsection[{log}]{\setlength{\rightskip}{0pt plus 5cm}void Game::log (std::string {\em message})}}
+\label{classGame_a090e1f20d57b782a93b5b61c8b6f15b8}
+
+
+logs a debug message to the console 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em message}]to log to console \end{DoxyParams}
+\hypertarget{classGame_a51c860f2a6051188585946859efa2967}{
+\index{Game@{Game}!openInventory@{openInventory}}
+\index{openInventory@{openInventory}!Game@{Game}}
+\subsubsection[{openInventory}]{\setlength{\rightskip}{0pt plus 5cm}void Game::openInventory ({\bf EntityPlayer} \& {\em player})}}
+\label{classGame_a51c860f2a6051188585946859efa2967}
+
+
+Displays the users inventory to the screen. 
+\begin{DoxyParams}{Parameters}
+\item[{\em inout\mbox{]}}]player, the player you wish to display inventory of \end{DoxyParams}
+\hypertarget{classGame_ad94d7beb2a5072ee2d8379cce4962ced}{
+\index{Game@{Game}!print@{print}}
+\index{print@{print}!Game@{Game}}
+\subsubsection[{print}]{\setlength{\rightskip}{0pt plus 5cm}void Game::print (std::string {\em text})}}
+\label{classGame_ad94d7beb2a5072ee2d8379cce4962ced}
+
+
+Outputs the given text to the screen. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em Text}]to be outputed to the screen \end{DoxyParams}
+\hypertarget{classGame_afd7159db54f6bf097c54fdb21f9ffdab}{
+\index{Game@{Game}!setDebug@{setDebug}}
+\index{setDebug@{setDebug}!Game@{Game}}
+\subsubsection[{setDebug}]{\setlength{\rightskip}{0pt plus 5cm}void Game::setDebug (bool {\em d})}}
+\label{classGame_afd7159db54f6bf097c54fdb21f9ffdab}
+
+
+sets debug messages on or off \mbox{[}in\mbox{]} the toggle on or off \hypertarget{classGame_acf32945c92475ff25c296b38b9090d7a}{
+\index{Game@{Game}!setDifficulty@{setDifficulty}}
+\index{setDifficulty@{setDifficulty}!Game@{Game}}
+\subsubsection[{setDifficulty}]{\setlength{\rightskip}{0pt plus 5cm}void Game::setDifficulty (int {\em difficulty})}}
+\label{classGame_acf32945c92475ff25c296b38b9090d7a}
+
+
+sets the difficulty of the game 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em difficulty,the}]difficulty you want to set the game to (1 -\/ 3) \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Game.h\item 
+Game.cc\end{DoxyCompactItemize}

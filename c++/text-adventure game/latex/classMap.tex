@@ -1,0 +1,119 @@
+\hypertarget{classMap}{
+\section{Map Class Reference}
+\label{classMap}\index{Map@{Map}}
+}
+
+
+\hyperlink{classMap}{Map} Class.  
+
+
+{\ttfamily \#include $<$Map.h$>$}\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMap_aba466e7794843d6452e216e2c99fa69d}{Map} (int diff, \hyperlink{classEntityPlayer}{EntityPlayer} $\ast$p)
+\begin{DoxyCompactList}\small\item\em Constructs the map of the game. \item\end{DoxyCompactList}\item 
+\hypertarget{classMap_aa403fbe09394ccf39747588f5168e3b2}{
+\hyperlink{classMap_aa403fbe09394ccf39747588f5168e3b2}{$\sim$Map} ()}
+\label{classMap_aa403fbe09394ccf39747588f5168e3b2}
+
+\begin{DoxyCompactList}\small\item\em Deconstructs the map of the game. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classMap_a5e9b9f6d6acbc48ec4d0b582a0243a32}{generate} ()
+\begin{DoxyCompactList}\small\item\em Generates map of the rooms. \item\end{DoxyCompactList}\item 
+void \hyperlink{classMap_a23a910ea4dbd706458297c79f587e24f}{movePlayer} (\hyperlink{classRoom}{Room} $\ast$room)
+\begin{DoxyCompactList}\small\item\em Moves player to given room in map. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classMap_a973b435af324185a04990a4993a90e2d}{displayDescription} ()
+\begin{DoxyCompactList}\small\item\em Displays description of the room. \item\end{DoxyCompactList}\item 
+\hyperlink{classRoom}{Room} $\ast$ \hyperlink{classMap_a285c84b0ccc05f50ecf4a65fb7f78b43}{getCurRoom} () const 
+\begin{DoxyCompactList}\small\item\em gets the hieght of the room in the map tree. \item\end{DoxyCompactList}\item 
+\hypertarget{classMap_affafdab59022d13ebd110ed2d67b24cd}{
+void {\bfseries getRandomRoom} (\hyperlink{classRoom}{Room} $\ast$\&c)}
+\label{classMap_affafdab59022d13ebd110ed2d67b24cd}
+
+\item 
+\hypertarget{classMap_a04a1710dd75883506f872cc0857353f5}{
+int {\bfseries getX} ()}
+\label{classMap_a04a1710dd75883506f872cc0857353f5}
+
+\item 
+\hypertarget{classMap_af9e33c6bab74ce8219572530089c8149}{
+int {\bfseries getY} ()}
+\label{classMap_af9e33c6bab74ce8219572530089c8149}
+
+\item 
+\hypertarget{classMap_ab76679f3de70e17fa867a5e8f58de317}{
+std::vector$<$ int $>$ {\bfseries getOpVec} ()}
+\label{classMap_ab76679f3de70e17fa867a5e8f58de317}
+
+\item 
+\hypertarget{classMap_a94b10e9d3bd31fef60c2178e9ecfcd11}{
+\hyperlink{classRoom}{Room} $\ast$ {\bfseries getMap} (int x, int y)}
+\label{classMap_a94b10e9d3bd31fef60c2178e9ecfcd11}
+
+\item 
+\hypertarget{classMap_a93e05e553b959995d296cabb76df67dd}{
+std::vector$<$ std::vector$<$ \hyperlink{classRoom}{Room} $\ast$ $>$ $>$ {\bfseries getFullMap} ()}
+\label{classMap_a93e05e553b959995d296cabb76df67dd}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classMap}{Map} Class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMap_aba466e7794843d6452e216e2c99fa69d}{
+\index{Map@{Map}!Map@{Map}}
+\index{Map@{Map}!Map@{Map}}
+\subsubsection[{Map}]{\setlength{\rightskip}{0pt plus 5cm}Map::Map (int {\em diff}, \/  {\bf EntityPlayer} $\ast$ {\em p})}}
+\label{classMap_aba466e7794843d6452e216e2c99fa69d}
+
+
+Constructs the map of the game. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em difficulty,the}]difficulty of the game. \item[{\em inout\mbox{]}}]\&player, a reference to the player. \end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMap_a973b435af324185a04990a4993a90e2d}{
+\index{Map@{Map}!displayDescription@{displayDescription}}
+\index{displayDescription@{displayDescription}!Map@{Map}}
+\subsubsection[{displayDescription}]{\setlength{\rightskip}{0pt plus 5cm}bool Map::displayDescription ()}}
+\label{classMap_a973b435af324185a04990a4993a90e2d}
+
+
+Displays description of the room. \begin{DoxyReturn}{Returns}
+Bool: returns true if description succesfully prints. 
+\end{DoxyReturn}
+\hypertarget{classMap_a5e9b9f6d6acbc48ec4d0b582a0243a32}{
+\index{Map@{Map}!generate@{generate}}
+\index{generate@{generate}!Map@{Map}}
+\subsubsection[{generate}]{\setlength{\rightskip}{0pt plus 5cm}bool Map::generate ()}}
+\label{classMap_a5e9b9f6d6acbc48ec4d0b582a0243a32}
+
+
+Generates map of the rooms. \begin{DoxyReturn}{Returns}
+bool : returns true if map is generated correctly. 
+\end{DoxyReturn}
+\hypertarget{classMap_a285c84b0ccc05f50ecf4a65fb7f78b43}{
+\index{Map@{Map}!getCurRoom@{getCurRoom}}
+\index{getCurRoom@{getCurRoom}!Map@{Map}}
+\subsubsection[{getCurRoom}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Room}$\ast$ Map::getCurRoom () const\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}
+\label{classMap_a285c84b0ccc05f50ecf4a65fb7f78b43}
+
+
+gets the hieght of the room in the map tree. /param\mbox{[}in\mbox{]} \&room, a reference to the room that the height is need for. /return const int: returns the hieght of the room in the map tree. \hypertarget{classMap_a23a910ea4dbd706458297c79f587e24f}{
+\index{Map@{Map}!movePlayer@{movePlayer}}
+\index{movePlayer@{movePlayer}!Map@{Map}}
+\subsubsection[{movePlayer}]{\setlength{\rightskip}{0pt plus 5cm}void Map::movePlayer ({\bf Room} $\ast$ {\em room})}}
+\label{classMap_a23a910ea4dbd706458297c79f587e24f}
+
+
+Moves player to given room in map. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em the}]pointer to the room you want to move the player to \end{DoxyParams}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+Map.h\item 
+Map.cc\end{DoxyCompactItemize}

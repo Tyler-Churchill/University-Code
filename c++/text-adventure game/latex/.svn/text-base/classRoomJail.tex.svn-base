@@ -1,0 +1,79 @@
+\hypertarget{classRoomJail}{
+\section{RoomJail Class Reference}
+\label{classRoomJail}\index{RoomJail@{RoomJail}}
+}
+
+
+Class \hyperlink{classRoomJail}{RoomJail}.  
+
+
+{\ttfamily \#include $<$RoomJail.h$>$}Inheritance diagram for RoomJail::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classRoomJail}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classRoomJail_ae0c2bba84e14c607af53a55b3e4d1810}{generate} ()
+\begin{DoxyCompactList}\small\item\em Generates the jail room. \item\end{DoxyCompactList}\item 
+std::string \hyperlink{classRoomJail_a4f33dd7e286e3505b622d97b30616d28}{getDescription} ()
+\begin{DoxyCompactList}\small\item\em Gets the description for the jail room. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classRoomJail_a33860dcae7024da01ab1063bc4b1db0d}{isEmpty} ()
+\begin{DoxyCompactList}\small\item\em Checks to see if the room enemies are in the jail room. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{classRoomJail}{RoomJail}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classRoomJail_ae0c2bba84e14c607af53a55b3e4d1810}{
+\index{RoomJail@{RoomJail}!generate@{generate}}
+\index{generate@{generate}!RoomJail@{RoomJail}}
+\subsubsection[{generate}]{\setlength{\rightskip}{0pt plus 5cm}void RoomJail::generate ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classRoomJail_ae0c2bba84e14c607af53a55b3e4d1810}
+
+
+Generates the jail room. This function generates which enemies will appear in the jail with player 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em none}]\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRoom_a3556128b8e7f544fa618576fbab4b52e}{Room}.\hypertarget{classRoomJail_a4f33dd7e286e3505b622d97b30616d28}{
+\index{RoomJail@{RoomJail}!getDescription@{getDescription}}
+\index{getDescription@{getDescription}!RoomJail@{RoomJail}}
+\subsubsection[{getDescription}]{\setlength{\rightskip}{0pt plus 5cm}std::string RoomJail::getDescription ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classRoomJail_a4f33dd7e286e3505b622d97b30616d28}
+
+
+Gets the description for the jail room. This function tells the user what is in and around the jail 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em none}]\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string-\/that describes the jail's condition 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classRoom_aacf839325fa7c6b08d21533b0780025c}{Room}.\hypertarget{classRoomJail_a33860dcae7024da01ab1063bc4b1db0d}{
+\index{RoomJail@{RoomJail}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!RoomJail@{RoomJail}}
+\subsubsection[{isEmpty}]{\setlength{\rightskip}{0pt plus 5cm}bool RoomJail::isEmpty ()}}
+\label{classRoomJail_a33860dcae7024da01ab1063bc4b1db0d}
+
+
+Checks to see if the room enemies are in the jail room. This function checks to see if anything is in the jail with player 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em none}]\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool -\/ true if the jail is empty otherwise false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+RoomJail.h\item 
+RoomJail.cc\end{DoxyCompactItemize}

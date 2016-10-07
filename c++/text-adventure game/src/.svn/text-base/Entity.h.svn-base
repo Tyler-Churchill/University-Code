@@ -1,0 +1,75 @@
+#pragma once
+
+#include <vector>
+#include "Attributes.h"
+#include "Item.h"
+#include <iostream>
+
+enum ENTITYTYPE {SKELETON, SPIDER, BAT, TROLL, DRAGON, CONTAINER};
+
+///
+/// \brief Entity class
+///
+class Entity
+{
+  public:
+   virtual ~Entity()
+   {
+      delete this;
+   }
+   /// \brief Attacks the given entity
+   ///
+   /// \param[in] entity, a reference to the entity that will be attacked
+   virtual bool attack(Entity &entity) = 0;
+
+   /// \brief Returns true if the entity is alive, false if dead
+   ///
+   /// \return Returns true if the entity is alive, false if dead
+   virtual bool isAlive() = 0;
+
+   /// \brief Updates the entity so that it can make decisions per turn
+   ///
+   /// \return Returns void
+  
+
+   /// \brief Gives the loot from the entity to the given entity (transfers inventory to the referenced entity)
+   ///
+   /// \param[in] entity, transfers the inventory from the given entity to the current entity
+   /// \return Returns void
+   virtual void getLoot(Entity &entity) = 0;
+
+   /// \brief Returns true if the entity has items in their inventory, false otherwise
+   ///
+   /// \return Returns void
+   virtual bool hasLoot() = 0;
+   
+   /// \brief Returns the entity's inventory of items
+   ///
+   /// \return Retuns a vector of items that the entity owns
+   std::vector<Item*>& getInventory() { return inventory; };
+   /// \brief Returns the entity's Attributes object
+   ///
+   /// \return Retuns a referance the entitys Attributes object
+   Attributes& getAttributes() { return attributes; };
+   
+   void setAttributes(Attributes x) { attributes = x; };
+    /// \brief Sets the attribute abject to another attribute object
+   ///
+   /// \param[in] Attribbutes to set
+   void setInventory(std::vector<Item*> x) { inventory = x; };
+   /// \brief Sets the name of the Entity
+   ///
+   /// \param[in] Name to set to
+   void setName(std::string &y){name = y;};
+     /// \brief Gets the name of the Entity
+   ///
+   /// \return Name of the Entity
+   std::string getName(){return name;};
+   
+  private:
+    Attributes attributes;
+    std::vector<Item*> inventory;
+    std::string name = "";
+};
+
+std::ostream& operator<<(std::ostream &os, const Entity& e);

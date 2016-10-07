@@ -1,0 +1,79 @@
+\hypertarget{classEntityBat}{
+\section{EntityBat Class Reference}
+\label{classEntityBat}\index{EntityBat@{EntityBat}}
+}
+Inheritance diagram for EntityBat::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classEntityBat}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classEntityBat_ab13663ab6da9777dff786150d40de001}{attack} (\hyperlink{classEntity}{Entity} \&entity)
+\begin{DoxyCompactList}\small\item\em Function that calls an attack on the given Bat. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classEntityBat_a4b57a0f468d2a1c78b0d4dc5a752778e}{isAlive} ()
+\begin{DoxyCompactList}\small\item\em Function that checks to see if the Bat is alive, returns a boolean value to determine such. \item\end{DoxyCompactList}\item 
+\hypertarget{classEntityBat_a2c94d346c7a5ba339448ad30e84fb78e}{
+void \hyperlink{classEntityBat_a2c94d346c7a5ba339448ad30e84fb78e}{update} ()}
+\label{classEntityBat_a2c94d346c7a5ba339448ad30e84fb78e}
+
+\begin{DoxyCompactList}\small\item\em Function that updates the Bat to make its next decision $\ast$UNUSED$\ast$. \item\end{DoxyCompactList}\item 
+void \hyperlink{classEntityBat_a25484482de5fa1504fabc6836d4b1d18}{getLoot} (\hyperlink{classEntity}{Entity} \&entity)
+\begin{DoxyCompactList}\small\item\em Function that gives the loot to the selected Bat. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classEntityBat_aa278c0fe99f11969de027f188ff0216d}{hasLoot} ()
+\begin{DoxyCompactList}\small\item\em Function that checks to see if the current Bat has loot or not. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEntityBat_ab13663ab6da9777dff786150d40de001}{
+\index{EntityBat@{EntityBat}!attack@{attack}}
+\index{attack@{attack}!EntityBat@{EntityBat}}
+\subsubsection[{attack}]{\setlength{\rightskip}{0pt plus 5cm}bool EntityBat::attack ({\bf Entity} \& {\em entity})}}
+\label{classEntityBat_ab13663ab6da9777dff786150d40de001}
+
+
+Function that calls an attack on the given Bat. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \hyperlink{classEntity}{Entity}}]\&entity \end{DoxyParams}
+\hypertarget{classEntityBat_a25484482de5fa1504fabc6836d4b1d18}{
+\index{EntityBat@{EntityBat}!getLoot@{getLoot}}
+\index{getLoot@{getLoot}!EntityBat@{EntityBat}}
+\subsubsection[{getLoot}]{\setlength{\rightskip}{0pt plus 5cm}void EntityBat::getLoot ({\bf Entity} \& {\em entity})}}
+\label{classEntityBat_a25484482de5fa1504fabc6836d4b1d18}
+
+
+Function that gives the loot to the selected Bat. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \hyperlink{classEntity}{Entity}}]\&entity \end{DoxyParams}
+\hypertarget{classEntityBat_aa278c0fe99f11969de027f188ff0216d}{
+\index{EntityBat@{EntityBat}!hasLoot@{hasLoot}}
+\index{hasLoot@{hasLoot}!EntityBat@{EntityBat}}
+\subsubsection[{hasLoot}]{\setlength{\rightskip}{0pt plus 5cm}bool EntityBat::hasLoot ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classEntityBat_aa278c0fe99f11969de027f188ff0216d}
+
+
+Function that checks to see if the current Bat has loot or not. \begin{DoxyReturn}{Returns}
+boolean if bat has loot yes(true), no(false) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEntity_aaac21381e4a788de507e706ce8d188c1}{Entity}.\hypertarget{classEntityBat_a4b57a0f468d2a1c78b0d4dc5a752778e}{
+\index{EntityBat@{EntityBat}!isAlive@{isAlive}}
+\index{isAlive@{isAlive}!EntityBat@{EntityBat}}
+\subsubsection[{isAlive}]{\setlength{\rightskip}{0pt plus 5cm}bool EntityBat::isAlive ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classEntityBat_a4b57a0f468d2a1c78b0d4dc5a752778e}
+
+
+Function that checks to see if the Bat is alive, returns a boolean value to determine such. \begin{DoxyReturn}{Returns}
+boolean returns if the bat is alive(true) or dead(false) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEntity_a0c67d5136d2c945e0911bd547d766586}{Entity}.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+EntityBat.h\item 
+EntityBat.cc\end{DoxyCompactItemize}

@@ -1,0 +1,133 @@
+\hypertarget{classEntityPlayer}{
+\section{EntityPlayer Class Reference}
+\label{classEntityPlayer}\index{EntityPlayer@{EntityPlayer}}
+}
+
+
+\hyperlink{classEntity}{Entity} class.  
+
+
+{\ttfamily \#include $<$EntityPlayer.h$>$}Inheritance diagram for EntityPlayer::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classEntityPlayer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEntityPlayer_a7e68bba107a53558083cb32553145f45}{EntityPlayer} ()
+\begin{DoxyCompactList}\small\item\em constructor for player \item\end{DoxyCompactList}\item 
+\hyperlink{classEntityPlayer_aed86f9a0a4dc758f73f399defe96af54}{$\sim$EntityPlayer} ()
+\begin{DoxyCompactList}\small\item\em destructor for player \item\end{DoxyCompactList}\item 
+bool \hyperlink{classEntityPlayer_a4eb09b4502fd737310d05c19e57571b6}{attack} (\hyperlink{classEntity}{Entity} \&entity)
+\begin{DoxyCompactList}\small\item\em Attacks the given entity. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classEntityPlayer_a5b942df30491223986084c3ce1f65757}{isAlive} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the entity is alive, false if dead. \item\end{DoxyCompactList}\item 
+void \hyperlink{classEntityPlayer_add17c2b65216f02327940997329bdc12}{getLoot} (\hyperlink{classEntity}{Entity} \&entity)
+\begin{DoxyCompactList}\small\item\em Gives the loot from the entity to the given entity (transfers inventory to the referenced entity). \item\end{DoxyCompactList}\item 
+bool \hyperlink{classEntityPlayer_aeb8c83961d428214a12d4becbb225da9}{hasLoot} ()
+\begin{DoxyCompactList}\small\item\em Returns true if the entity has items in their inventory, false otherwise. \item\end{DoxyCompactList}\item 
+void \hyperlink{classEntityPlayer_a2b127f2ca5863a9d2f01981d207e2692}{equipArmor} (\hyperlink{classItem}{Item} $\ast$item)
+\begin{DoxyCompactList}\small\item\em Updates the player's stats based on their new item. \item\end{DoxyCompactList}\item 
+void \hyperlink{classEntityPlayer_aec5d2db2db8ec3c433385ca4146880ff}{equipWeapon} (\hyperlink{classItem}{Item} $\ast$item)
+\begin{DoxyCompactList}\small\item\em equips item to available spot \item\end{DoxyCompactList}\item 
+void \hyperlink{classEntityPlayer_aa375ee1190522421b8ed7efecc858b16}{usePotion} (\hyperlink{classItem}{Item} $\ast$item, int x)
+\begin{DoxyCompactList}\small\item\em uses potion \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classEntity}{Entity} class. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classEntityPlayer_a7e68bba107a53558083cb32553145f45}{
+\index{EntityPlayer@{EntityPlayer}!EntityPlayer@{EntityPlayer}}
+\index{EntityPlayer@{EntityPlayer}!EntityPlayer@{EntityPlayer}}
+\subsubsection[{EntityPlayer}]{\setlength{\rightskip}{0pt plus 5cm}EntityPlayer::EntityPlayer ()}}
+\label{classEntityPlayer_a7e68bba107a53558083cb32553145f45}
+
+
+constructor for player constructs the player \hypertarget{classEntityPlayer_aed86f9a0a4dc758f73f399defe96af54}{
+\index{EntityPlayer@{EntityPlayer}!$\sim$EntityPlayer@{$\sim$EntityPlayer}}
+\index{$\sim$EntityPlayer@{$\sim$EntityPlayer}!EntityPlayer@{EntityPlayer}}
+\subsubsection[{$\sim$EntityPlayer}]{\setlength{\rightskip}{0pt plus 5cm}EntityPlayer::$\sim$EntityPlayer ()}}
+\label{classEntityPlayer_aed86f9a0a4dc758f73f399defe96af54}
+
+
+destructor for player destructs the player pointer 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEntityPlayer_a4eb09b4502fd737310d05c19e57571b6}{
+\index{EntityPlayer@{EntityPlayer}!attack@{attack}}
+\index{attack@{attack}!EntityPlayer@{EntityPlayer}}
+\subsubsection[{attack}]{\setlength{\rightskip}{0pt plus 5cm}bool EntityPlayer::attack ({\bf Entity} \& {\em entity})}}
+\label{classEntityPlayer_a4eb09b4502fd737310d05c19e57571b6}
+
+
+Attacks the given entity. Detailed description 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em entity,a}]reference to the entity that will be attacked \end{DoxyParams}
+\hypertarget{classEntityPlayer_a2b127f2ca5863a9d2f01981d207e2692}{
+\index{EntityPlayer@{EntityPlayer}!equipArmor@{equipArmor}}
+\index{equipArmor@{equipArmor}!EntityPlayer@{EntityPlayer}}
+\subsubsection[{equipArmor}]{\setlength{\rightskip}{0pt plus 5cm}void EntityPlayer::equipArmor ({\bf Item} $\ast$ {\em item})}}
+\label{classEntityPlayer_a2b127f2ca5863a9d2f01981d207e2692}
+
+
+Updates the player's stats based on their new item. Detailed description 
+\begin{DoxyParams}{Parameters}
+\item[{\em none}]equips item to available spot Changes the equipped weapon slot then forces updates to player's stats \item[{\em none}]\end{DoxyParams}
+\hypertarget{classEntityPlayer_aec5d2db2db8ec3c433385ca4146880ff}{
+\index{EntityPlayer@{EntityPlayer}!equipWeapon@{equipWeapon}}
+\index{equipWeapon@{equipWeapon}!EntityPlayer@{EntityPlayer}}
+\subsubsection[{equipWeapon}]{\setlength{\rightskip}{0pt plus 5cm}void EntityPlayer::equipWeapon ({\bf Item} $\ast$ {\em item})}}
+\label{classEntityPlayer_aec5d2db2db8ec3c433385ca4146880ff}
+
+
+equips item to available spot Changes the equipped armor slot then forces update to player's stats \hypertarget{classEntityPlayer_add17c2b65216f02327940997329bdc12}{
+\index{EntityPlayer@{EntityPlayer}!getLoot@{getLoot}}
+\index{getLoot@{getLoot}!EntityPlayer@{EntityPlayer}}
+\subsubsection[{getLoot}]{\setlength{\rightskip}{0pt plus 5cm}void EntityPlayer::getLoot ({\bf Entity} \& {\em entity})}}
+\label{classEntityPlayer_add17c2b65216f02327940997329bdc12}
+
+
+Gives the loot from the entity to the given entity (transfers inventory to the referenced entity). Detailed description 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em entity,the}]entity you want to get its inventory from \end{DoxyParams}
+\hypertarget{classEntityPlayer_aeb8c83961d428214a12d4becbb225da9}{
+\index{EntityPlayer@{EntityPlayer}!hasLoot@{hasLoot}}
+\index{hasLoot@{hasLoot}!EntityPlayer@{EntityPlayer}}
+\subsubsection[{hasLoot}]{\setlength{\rightskip}{0pt plus 5cm}bool EntityPlayer::hasLoot ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classEntityPlayer_aeb8c83961d428214a12d4becbb225da9}
+
+
+Returns true if the entity has items in their inventory, false otherwise. Detailed description \begin{DoxyReturn}{Returns}
+boolean returns if the entity has loot or not 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEntity_aaac21381e4a788de507e706ce8d188c1}{Entity}.\hypertarget{classEntityPlayer_a5b942df30491223986084c3ce1f65757}{
+\index{EntityPlayer@{EntityPlayer}!isAlive@{isAlive}}
+\index{isAlive@{isAlive}!EntityPlayer@{EntityPlayer}}
+\subsubsection[{isAlive}]{\setlength{\rightskip}{0pt plus 5cm}bool EntityPlayer::isAlive ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classEntityPlayer_a5b942df30491223986084c3ce1f65757}
+
+
+Returns true if the entity is alive, false if dead. Detailed description \begin{DoxyReturn}{Returns}
+Returns true if the entity is alive, false if dead 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEntity_a0c67d5136d2c945e0911bd547d766586}{Entity}.\hypertarget{classEntityPlayer_aa375ee1190522421b8ed7efecc858b16}{
+\index{EntityPlayer@{EntityPlayer}!usePotion@{usePotion}}
+\index{usePotion@{usePotion}!EntityPlayer@{EntityPlayer}}
+\subsubsection[{usePotion}]{\setlength{\rightskip}{0pt plus 5cm}void EntityPlayer::usePotion ({\bf Item} $\ast$ {\em item}, \/  int {\em x})}}
+\label{classEntityPlayer_aa375ee1190522421b8ed7efecc858b16}
+
+
+uses potion Uses the potion and gets rid of it 
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+EntityPlayer.h\item 
+EntityPlayer.cc\end{DoxyCompactItemize}

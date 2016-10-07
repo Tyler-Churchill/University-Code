@@ -1,0 +1,61 @@
+\hypertarget{classEntityFactory}{
+\section{EntityFactory Class Reference}
+\label{classEntityFactory}\index{EntityFactory@{EntityFactory}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEntity}{Entity} $\ast$ \hyperlink{classEntityFactory_a01c721ef75f3b8a96ba39637945261f8}{getEnemy} (ENTITYTYPE e, \hyperlink{classRoom}{Room} $\ast$x)
+\begin{DoxyCompactList}\small\item\em Returns a generated enemy entity. \item\end{DoxyCompactList}\item 
+std::vector$<$ \hyperlink{classItem}{Item} $\ast$ $>$ \hyperlink{classEntityFactory_a195921788d3e27d4171addbccada7022}{makeInventory} (\hyperlink{classRoom}{Room} $\ast$x)
+\begin{DoxyCompactList}\small\item\em Returns an inventory containing a random item, uses room as a seed. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classEntityFactory}{EntityFactory} $\ast$ \hyperlink{classEntityFactory_aab225cf4504fb13ab605ac4c5d6584b9}{getInstance} ()
+\begin{DoxyCompactList}\small\item\em Grabs the current single instance of \hyperlink{classEntityFactory}{EntityFactory}. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEntityFactory_a01c721ef75f3b8a96ba39637945261f8}{
+\index{EntityFactory@{EntityFactory}!getEnemy@{getEnemy}}
+\index{getEnemy@{getEnemy}!EntityFactory@{EntityFactory}}
+\subsubsection[{getEnemy}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Entity} $\ast$ EntityFactory::getEnemy (ENTITYTYPE {\em e}, \/  {\bf Room} $\ast$ {\em x})}}
+\label{classEntityFactory_a01c721ef75f3b8a96ba39637945261f8}
+
+
+Returns a generated enemy entity. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \hyperlink{classEntity}{Entity}}]enum you want to make \item[\mbox{$\leftarrow$} {\em \hyperlink{classRoom}{Room}}]where entity is made, This is used to scale the entity as the dungeon progresses \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns the generated enemy 
+\end{DoxyReturn}
+\hypertarget{classEntityFactory_aab225cf4504fb13ab605ac4c5d6584b9}{
+\index{EntityFactory@{EntityFactory}!getInstance@{getInstance}}
+\index{getInstance@{getInstance}!EntityFactory@{EntityFactory}}
+\subsubsection[{getInstance}]{\setlength{\rightskip}{0pt plus 5cm}{\bf EntityFactory} $\ast$ EntityFactory::getInstance ()\hspace{0.3cm}{\ttfamily  \mbox{[}static\mbox{]}}}}
+\label{classEntityFactory_aab225cf4504fb13ab605ac4c5d6584b9}
+
+
+Grabs the current single instance of \hyperlink{classEntityFactory}{EntityFactory}. \begin{DoxyReturn}{Returns}
+\hyperlink{classEntityFactory}{EntityFactory}, the current instance of the entity factory 
+\end{DoxyReturn}
+\hypertarget{classEntityFactory_a195921788d3e27d4171addbccada7022}{
+\index{EntityFactory@{EntityFactory}!makeInventory@{makeInventory}}
+\index{makeInventory@{makeInventory}!EntityFactory@{EntityFactory}}
+\subsubsection[{makeInventory}]{\setlength{\rightskip}{0pt plus 5cm}std::vector$<$ {\bf Item} $\ast$ $>$ EntityFactory::makeInventory ({\bf Room} $\ast$ {\em x})}}
+\label{classEntityFactory_a195921788d3e27d4171addbccada7022}
+
+
+Returns an inventory containing a random item, uses room as a seed. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \hyperlink{classRoom}{Room}}]to make the item in, this is used to scale the item\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns an inventory containing a random item 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+EntityFactory.h\item 
+EntityFactory.cc\end{DoxyCompactItemize}

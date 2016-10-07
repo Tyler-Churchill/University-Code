@@ -1,0 +1,94 @@
+\hypertarget{classEntityDragon}{
+\section{EntityDragon Class Reference}
+\label{classEntityDragon}\index{EntityDragon@{EntityDragon}}
+}
+
+
+class \hyperlink{classEntityDragon}{EntityDragon}  
+
+
+{\ttfamily \#include $<$EntityDragon.h$>$}Inheritance diagram for EntityDragon::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classEntityDragon}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classEntityDragon_a84059668fe1280243af04706505525a3}{
+\hyperlink{classEntityDragon_a84059668fe1280243af04706505525a3}{EntityDragon} ()}
+\label{classEntityDragon_a84059668fe1280243af04706505525a3}
+
+\begin{DoxyCompactList}\small\item\em Constructor for the Dragon that puts a Dragon into the world. \item\end{DoxyCompactList}\item 
+void \hyperlink{classEntityDragon_abbf17dfddb02adf35a0f2ca21539c519}{attack} (\hyperlink{classEntity}{Entity} \&entity)
+\begin{DoxyCompactList}\small\item\em Function that calls an attack on the currently selected Dragon. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classEntityDragon_af75ac2b198040224fd226d4578a16d59}{isAlive} ()
+\begin{DoxyCompactList}\small\item\em Function that checks to see if the \hyperlink{classEntity}{Entity} is alive and returns a boolean value that does such. \item\end{DoxyCompactList}\item 
+\hypertarget{classEntityDragon_a15ba657de27974775c27ff193d3457b0}{
+void \hyperlink{classEntityDragon_a15ba657de27974775c27ff193d3457b0}{update} ()}
+\label{classEntityDragon_a15ba657de27974775c27ff193d3457b0}
+
+\begin{DoxyCompactList}\small\item\em Function that updates the Entity's next decision UNUSED. \item\end{DoxyCompactList}\item 
+void \hyperlink{classEntityDragon_a9f1394878e71e0494e844c894dc0ef29}{getLoot} (\hyperlink{classEntity}{Entity} \&entity)
+\begin{DoxyCompactList}\small\item\em Function that gives loot to the currently selected Dragon. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classEntityDragon_ab5d8e57904380d562f0eab2241fc881e}{hasLoot} ()
+\begin{DoxyCompactList}\small\item\em Function that checks to see if the \hyperlink{classEntity}{Entity} has loot and returns a boolean value to determine such. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class \hyperlink{classEntityDragon}{EntityDragon} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEntityDragon_abbf17dfddb02adf35a0f2ca21539c519}{
+\index{EntityDragon@{EntityDragon}!attack@{attack}}
+\index{attack@{attack}!EntityDragon@{EntityDragon}}
+\subsubsection[{attack}]{\setlength{\rightskip}{0pt plus 5cm}void EntityDragon::attack ({\bf Entity} \& {\em entity})}}
+\label{classEntityDragon_abbf17dfddb02adf35a0f2ca21539c519}
+
+
+Function that calls an attack on the currently selected Dragon. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \hyperlink{classEntityDragon}{EntityDragon}}]\&entity \end{DoxyParams}
+\hypertarget{classEntityDragon_a9f1394878e71e0494e844c894dc0ef29}{
+\index{EntityDragon@{EntityDragon}!getLoot@{getLoot}}
+\index{getLoot@{getLoot}!EntityDragon@{EntityDragon}}
+\subsubsection[{getLoot}]{\setlength{\rightskip}{0pt plus 5cm}void EntityDragon::getLoot ({\bf Entity} \& {\em entity})}}
+\label{classEntityDragon_a9f1394878e71e0494e844c894dc0ef29}
+
+
+Function that gives loot to the currently selected Dragon. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \hyperlink{classEntityDragon}{EntityDragon}}]\&entity \end{DoxyParams}
+\hypertarget{classEntityDragon_ab5d8e57904380d562f0eab2241fc881e}{
+\index{EntityDragon@{EntityDragon}!hasLoot@{hasLoot}}
+\index{hasLoot@{hasLoot}!EntityDragon@{EntityDragon}}
+\subsubsection[{hasLoot}]{\setlength{\rightskip}{0pt plus 5cm}bool EntityDragon::hasLoot ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classEntityDragon_ab5d8e57904380d562f0eab2241fc881e}
+
+
+Function that checks to see if the \hyperlink{classEntity}{Entity} has loot and returns a boolean value to determine such. \begin{DoxyReturn}{Returns}
+boolean if yes(true) or no(false) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEntity_aaac21381e4a788de507e706ce8d188c1}{Entity}.\hypertarget{classEntityDragon_af75ac2b198040224fd226d4578a16d59}{
+\index{EntityDragon@{EntityDragon}!isAlive@{isAlive}}
+\index{isAlive@{isAlive}!EntityDragon@{EntityDragon}}
+\subsubsection[{isAlive}]{\setlength{\rightskip}{0pt plus 5cm}bool EntityDragon::isAlive ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classEntityDragon_af75ac2b198040224fd226d4578a16d59}
+
+
+Function that checks to see if the \hyperlink{classEntity}{Entity} is alive and returns a boolean value that does such. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em none}]\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean to check if alive(true) or dead(false) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEntity_a0c67d5136d2c945e0911bd547d766586}{Entity}.
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+EntityDragon.h\end{DoxyCompactItemize}

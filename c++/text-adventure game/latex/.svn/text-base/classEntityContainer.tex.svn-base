@@ -1,0 +1,79 @@
+\hypertarget{classEntityContainer}{
+\section{EntityContainer Class Reference}
+\label{classEntityContainer}\index{EntityContainer@{EntityContainer}}
+}
+
+
+CLASS SCRAPPED DUE TO TIME CONTRAINTS.  
+
+
+{\ttfamily \#include $<$EntityContainer.h$>$}Inheritance diagram for EntityContainer::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classEntityContainer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classEntityContainer_a5ab518a81cab8bdd644461f7c2b8ce63}{EntityContainer} (\hyperlink{classEntity}{Entity} \&entity)
+\begin{DoxyCompactList}\small\item\em Constructor for Container that creates a Container in the world. \item\end{DoxyCompactList}\item 
+void \hyperlink{classEntityContainer_aaff8158120180012c66c61bc9c89cc99}{getLoot} (\hyperlink{classEntity}{Entity} \&entity)
+\begin{DoxyCompactList}\small\item\em Function that gives the currently selected Container loot. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classEntityContainer_aa6dc3c46009f7647eb68a8d8d005f94a}{hasLoot} ()
+\begin{DoxyCompactList}\small\item\em Function that checks to see if the \hyperlink{classEntity}{Entity} contains loot or not. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+CLASS SCRAPPED DUE TO TIME CONTRAINTS. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classEntityContainer_a5ab518a81cab8bdd644461f7c2b8ce63}{
+\index{EntityContainer@{EntityContainer}!EntityContainer@{EntityContainer}}
+\index{EntityContainer@{EntityContainer}!EntityContainer@{EntityContainer}}
+\subsubsection[{EntityContainer}]{\setlength{\rightskip}{0pt plus 5cm}EntityContainer::EntityContainer ({\bf Entity} \& {\em entity})}}
+\label{classEntityContainer_a5ab518a81cab8bdd644461f7c2b8ce63}
+
+
+Constructor for Container that creates a Container in the world. detailed description 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \hyperlink{classEntity}{Entity}}]\&entity \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+none 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classEntityContainer_aaff8158120180012c66c61bc9c89cc99}{
+\index{EntityContainer@{EntityContainer}!getLoot@{getLoot}}
+\index{getLoot@{getLoot}!EntityContainer@{EntityContainer}}
+\subsubsection[{getLoot}]{\setlength{\rightskip}{0pt plus 5cm}void EntityContainer::getLoot ({\bf Entity} \& {\em entity})}}
+\label{classEntityContainer_aaff8158120180012c66c61bc9c89cc99}
+
+
+Function that gives the currently selected Container loot. detailed description 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \hyperlink{classEntityContainer}{EntityContainer}}]\&entity \end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classEntityContainer_aa6dc3c46009f7647eb68a8d8d005f94a}{
+\index{EntityContainer@{EntityContainer}!hasLoot@{hasLoot}}
+\index{hasLoot@{hasLoot}!EntityContainer@{EntityContainer}}
+\subsubsection[{hasLoot}]{\setlength{\rightskip}{0pt plus 5cm}bool EntityContainer::hasLoot ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classEntityContainer_aa6dc3c46009f7647eb68a8d8d005f94a}
+
+
+Function that checks to see if the \hyperlink{classEntity}{Entity} contains loot or not. detailed description 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em none}]\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEntity_aaac21381e4a788de507e706ce8d188c1}{Entity}.
+
+The documentation for this class was generated from the following file:\begin{DoxyCompactItemize}
+\item 
+EntityContainer.h\end{DoxyCompactItemize}

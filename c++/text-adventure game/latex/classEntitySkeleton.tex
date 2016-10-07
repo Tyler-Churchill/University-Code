@@ -1,0 +1,87 @@
+\hypertarget{classEntitySkeleton}{
+\section{EntitySkeleton Class Reference}
+\label{classEntitySkeleton}\index{EntitySkeleton@{EntitySkeleton}}
+}
+
+
+\hyperlink{classEntitySkeleton}{EntitySkeleton}.  
+
+
+{\ttfamily \#include $<$EntitySkeleton.h$>$}Inheritance diagram for EntitySkeleton::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classEntitySkeleton}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classEntitySkeleton_a6adf4b4c5ee9b317fa0a8520bbfd0ec2}{attack} (\hyperlink{classEntity}{Entity} \&entity)
+\begin{DoxyCompactList}\small\item\em Function that will call an attack on the Skeleton provided. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classEntitySkeleton_aca37e505856dc81157069df6572971f6}{isAlive} ()
+\begin{DoxyCompactList}\small\item\em Function that checks to see if the Skeleton is alive or not, a boolean value does so. \item\end{DoxyCompactList}\item 
+\hypertarget{classEntitySkeleton_afcb3b28d14472d04ed5637758174edad}{
+void \hyperlink{classEntitySkeleton_afcb3b28d14472d04ed5637758174edad}{update} ()}
+\label{classEntitySkeleton_afcb3b28d14472d04ed5637758174edad}
+
+\begin{DoxyCompactList}\small\item\em Function that updates the Skeleton's next decision. \item\end{DoxyCompactList}\item 
+void \hyperlink{classEntitySkeleton_a8ad9f5cd6d797a76266ef0cc984645e0}{getLoot} (\hyperlink{classEntity}{Entity} \&entity)
+\begin{DoxyCompactList}\small\item\em Function that gives loot to the selected Skeleton. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classEntitySkeleton_a4044916cdb1d225542600f355018416b}{hasLoot} ()
+\begin{DoxyCompactList}\small\item\em Function that checks to see if the \hyperlink{classEntity}{Entity} has loot and returns a boolean value to do so. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{classEntitySkeleton}{EntitySkeleton}. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEntitySkeleton_a6adf4b4c5ee9b317fa0a8520bbfd0ec2}{
+\index{EntitySkeleton@{EntitySkeleton}!attack@{attack}}
+\index{attack@{attack}!EntitySkeleton@{EntitySkeleton}}
+\subsubsection[{attack}]{\setlength{\rightskip}{0pt plus 5cm}bool EntitySkeleton::attack ({\bf Entity} \& {\em entity})}}
+\label{classEntitySkeleton_a6adf4b4c5ee9b317fa0a8520bbfd0ec2}
+
+
+Function that will call an attack on the Skeleton provided. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \hyperlink{classEntity}{Entity}}]\&entity \end{DoxyParams}
+\hypertarget{classEntitySkeleton_a8ad9f5cd6d797a76266ef0cc984645e0}{
+\index{EntitySkeleton@{EntitySkeleton}!getLoot@{getLoot}}
+\index{getLoot@{getLoot}!EntitySkeleton@{EntitySkeleton}}
+\subsubsection[{getLoot}]{\setlength{\rightskip}{0pt plus 5cm}void EntitySkeleton::getLoot ({\bf Entity} \& {\em entity})}}
+\label{classEntitySkeleton_a8ad9f5cd6d797a76266ef0cc984645e0}
+
+
+Function that gives loot to the selected Skeleton. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \hyperlink{classEntity}{Entity}}]\&entity \end{DoxyParams}
+\hypertarget{classEntitySkeleton_a4044916cdb1d225542600f355018416b}{
+\index{EntitySkeleton@{EntitySkeleton}!hasLoot@{hasLoot}}
+\index{hasLoot@{hasLoot}!EntitySkeleton@{EntitySkeleton}}
+\subsubsection[{hasLoot}]{\setlength{\rightskip}{0pt plus 5cm}bool EntitySkeleton::hasLoot ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classEntitySkeleton_a4044916cdb1d225542600f355018416b}
+
+
+Function that checks to see if the \hyperlink{classEntity}{Entity} has loot and returns a boolean value to do so. \begin{DoxyReturn}{Returns}
+boolean to see if has loot(true) or not(false) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEntity_aaac21381e4a788de507e706ce8d188c1}{Entity}.\hypertarget{classEntitySkeleton_aca37e505856dc81157069df6572971f6}{
+\index{EntitySkeleton@{EntitySkeleton}!isAlive@{isAlive}}
+\index{isAlive@{isAlive}!EntitySkeleton@{EntitySkeleton}}
+\subsubsection[{isAlive}]{\setlength{\rightskip}{0pt plus 5cm}bool EntitySkeleton::isAlive ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classEntitySkeleton_aca37e505856dc81157069df6572971f6}
+
+
+Function that checks to see if the Skeleton is alive or not, a boolean value does so. \begin{DoxyReturn}{Returns}
+boolean to see if alive(true) or dead(false) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEntity_a0c67d5136d2c945e0911bd547d766586}{Entity}.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+EntitySkeleton.h\item 
+EntitySkeleton.cc\end{DoxyCompactItemize}

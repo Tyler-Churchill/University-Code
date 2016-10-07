@@ -1,0 +1,82 @@
+\hypertarget{classEntityTroll}{
+\section{EntityTroll Class Reference}
+\label{classEntityTroll}\index{EntityTroll@{EntityTroll}}
+}
+
+
+class \hyperlink{classEntityTroll}{EntityTroll}  
+
+
+{\ttfamily \#include $<$EntityTroll.h$>$}Inheritance diagram for EntityTroll::\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2cm]{classEntityTroll}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classEntityTroll_a704488b3520088318192997091215c06}{attack} (\hyperlink{classEntity}{Entity} \&entity)
+\begin{DoxyCompactList}\small\item\em Function that calls an attack on the given Troll. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classEntityTroll_ae35a6687d815bacb01c1968819834a62}{isAlive} ()
+\begin{DoxyCompactList}\small\item\em Function that checks to see if the \hyperlink{classEntity}{Entity} is alive and returns a boolean value to determine such. \item\end{DoxyCompactList}\item 
+void \hyperlink{classEntityTroll_acfa514b3531384123f7768d10717518e}{getLoot} (\hyperlink{classEntity}{Entity} \&entity)
+\begin{DoxyCompactList}\small\item\em Function that updates the Entity's next decision. \item\end{DoxyCompactList}\item 
+bool \hyperlink{classEntityTroll_ad661d7dcbe670dfbcbe826ff5a885aa4}{hasLoot} ()
+\begin{DoxyCompactList}\small\item\em Function that checks to see if the \hyperlink{classEntity}{Entity} has loot and returns a boolean value to do so. \item\end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class \hyperlink{classEntityTroll}{EntityTroll} 
+
+\subsection{Member Function Documentation}
+\hypertarget{classEntityTroll_a704488b3520088318192997091215c06}{
+\index{EntityTroll@{EntityTroll}!attack@{attack}}
+\index{attack@{attack}!EntityTroll@{EntityTroll}}
+\subsubsection[{attack}]{\setlength{\rightskip}{0pt plus 5cm}bool EntityTroll::attack ({\bf Entity} \& {\em entity})}}
+\label{classEntityTroll_a704488b3520088318192997091215c06}
+
+
+Function that calls an attack on the given Troll. 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \hyperlink{classEntityTroll}{EntityTroll}}]\&entity \end{DoxyParams}
+\hypertarget{classEntityTroll_acfa514b3531384123f7768d10717518e}{
+\index{EntityTroll@{EntityTroll}!getLoot@{getLoot}}
+\index{getLoot@{getLoot}!EntityTroll@{EntityTroll}}
+\subsubsection[{getLoot}]{\setlength{\rightskip}{0pt plus 5cm}void EntityTroll::getLoot ({\bf Entity} \& {\em entity})}}
+\label{classEntityTroll_acfa514b3531384123f7768d10717518e}
+
+
+Function that updates the Entity's next decision. Function that gives loot to the currently selected Troll 
+\begin{DoxyParams}{Parameters}
+\item[\mbox{$\leftarrow$} {\em \hyperlink{classEntityTroll}{EntityTroll}}]\&entity \end{DoxyParams}
+\hypertarget{classEntityTroll_ad661d7dcbe670dfbcbe826ff5a885aa4}{
+\index{EntityTroll@{EntityTroll}!hasLoot@{hasLoot}}
+\index{hasLoot@{hasLoot}!EntityTroll@{EntityTroll}}
+\subsubsection[{hasLoot}]{\setlength{\rightskip}{0pt plus 5cm}bool EntityTroll::hasLoot ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classEntityTroll_ad661d7dcbe670dfbcbe826ff5a885aa4}
+
+
+Function that checks to see if the \hyperlink{classEntity}{Entity} has loot and returns a boolean value to do so. \begin{DoxyReturn}{Returns}
+boolean if has loot(true) or not(false) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEntity_aaac21381e4a788de507e706ce8d188c1}{Entity}.\hypertarget{classEntityTroll_ae35a6687d815bacb01c1968819834a62}{
+\index{EntityTroll@{EntityTroll}!isAlive@{isAlive}}
+\index{isAlive@{isAlive}!EntityTroll@{EntityTroll}}
+\subsubsection[{isAlive}]{\setlength{\rightskip}{0pt plus 5cm}bool EntityTroll::isAlive ()\hspace{0.3cm}{\ttfamily  \mbox{[}virtual\mbox{]}}}}
+\label{classEntityTroll_ae35a6687d815bacb01c1968819834a62}
+
+
+Function that checks to see if the \hyperlink{classEntity}{Entity} is alive and returns a boolean value to determine such. \begin{DoxyReturn}{Returns}
+boolean if alive(true) or dead(false) 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classEntity_a0c67d5136d2c945e0911bd547d766586}{Entity}.
+
+The documentation for this class was generated from the following files:\begin{DoxyCompactItemize}
+\item 
+EntityTroll.h\item 
+EntityTroll.cc\end{DoxyCompactItemize}
