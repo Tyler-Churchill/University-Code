@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=yes">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+        <script type="text/javascript" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/layout.js"></script>
+    </head>
+    <body> 
+        <div class="fullscreen">
+            <div id="landing">           
+                <div id="logo">WOZ</div>
+                <div id="logo-under">the mind behind the first home computer</div>
+                <div id="read-more">read more<br>V</div>
+            </div>
+        </div><!-- end landing page full screen -->
+        <div class="fullscreen">
+            <div class="row-offcanvas row-offcanvas-right">
+                <div class="sidebar-offcanvas" id="sidebar">
+                    <ul class="nav">
+                      <li class="active"><a id="home">Home</a></li>
+                      <li><a id="reference">References</a></li>            
+                    </ul>
+                </div>
+            </div>
+            <div id="top-bar">   
+                <div class="row">
+        <div class="col-md-4"></div>
+                    <div class="col-md-4"><a>WOZ</a> </div>
+                   
+                       <div class="col-md-4" data-toggle="offcanvas" data-target=".sidebar-nav" id="right-nav"><</div>
+                </div>
+            </div> <!-- end top nav bar -->
+            <div class="clearfix"></div>
+            <div class="main-content">
+            </div> <!--- populated by ajax call -->
+        </div> <!-- end timeline full screen -->
+    </body>
+</html>
